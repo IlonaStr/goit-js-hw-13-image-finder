@@ -22,7 +22,7 @@ function imageRender(images) {
 }
 function imageSearch(e) {
     e.preventDefault();
-    const input = event.target.value;
+    const input = event.currentTarget.elements.query;
     clearMarkup();
     apiService.resetPage();
     apiService.searchQuery = input.value;
